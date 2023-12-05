@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    let userName;
+    let password;
+    
+    userName = prompt("Who's there?");
+
+    if  (userName == "Admin") {
+      password = prompt("Enter your password:");
+      if (password == "TheMaster") {
+        alert("Welcome!")
+      }
+      else {
+        alert("Wrong password!");
+      }
+    }
+    else if (userName === "" || userName === null) {
+      alert("Canceled")
+    }
+    else {
+      alert("I don't know you")
+    }
+
+
+  </script>
+</body>
+</html>
